@@ -1,0 +1,28 @@
+.center {
+	color: green;
+  background-color: lightblue;
+  position: absolute;
+ 	top: 50%;
+	left: 50%;
+    	transform: translate(-50%, -50%);
+}
+
+button{
+    font:30px helvetica, sans-serif;
+    border-radius: 10px;
+    background-color: ghostwhite;
+    opacity: .9;
+}
+
+h1{
+  text-align: center;
+  font:100px helvetica, sans-serif;
+  color: ghostwhite;
+}
+
+h2{
+  text-align: center;
+  font: 15px helvetica, sans-serif;
+  color: ghostwhite;
+
+}
