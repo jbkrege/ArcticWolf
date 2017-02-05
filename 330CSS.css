@@ -1,4 +1,5 @@
 font-family: 'Roboto', sans-serif;
+
 .center {
 	color: green;
   	background-color: lightblue;
@@ -10,7 +11,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 button{
-    font:30px helvetica, sans-serif;
+    font-size:30px;
     border-radius: 10px;
     background-color: ghostwhite;
     opacity: .9;
@@ -18,13 +19,17 @@ button{
 
 h1{
   text-align: center;
-  font:100px helvetica, sans-serif;
+  font-size:100px;
   color: ghostwhite;
+}
+
+p{
+	text-align: center	
 }
 
 h2{
   text-align: center;
-  font: 15px helvetica, sans-serif;
+  font-size: 15px;
   color: ghostwhite;
 
 }
