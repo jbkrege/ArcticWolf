@@ -10,7 +10,8 @@ font-family: 'Roboto', sans-serif;
 }
 
 button{
-    font-size: 30px;
+    size: 30px;
+    font-size: 20px;
     border-radius: 10px;
     background-color: ghostwhite;
     opacity: .9;
