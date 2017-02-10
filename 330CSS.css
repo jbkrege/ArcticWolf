@@ -5,8 +5,7 @@ body{
 }
 .center {
   border-radius: 10px;
-  background-color: white;
-  opacity: .4;
+  background-color: rgb(255,255,255,100);
   margin: 0 auto;
   width: 800px;
   text-align: center;
