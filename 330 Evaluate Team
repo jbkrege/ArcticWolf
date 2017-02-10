@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<body>
+<h1>Evaluate DTC Spring</h1>
+<div><p>Comfort with personal workload</p><label>:(</label> <input class = "slide" type = "range"></input> <label>:)</label></div>
+<div><p>Comfort with overall group workload</p><label>:(</label> <input class = "slide" type = "range"></input> <label>:)</label></div>
+<div><p>Comfort with group's communication</p><label>:(</label> <input class = "slide" type = "range"></input> <label>:)</label></div>
+<div><p>Team's degree of focus</p><label>:(</label> <input class = "slide" type = "range"></input> <label>:)</label></div>
+</body>
