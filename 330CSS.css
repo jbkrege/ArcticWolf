@@ -10,6 +10,18 @@ body{
   margin: 30px;
   text-align: center;
 }
+.middle{
+	position: absolute;
+ 	top: 50%;
+	left: 50%;
+    	transform: translate(-50%, -50%);
+	border-radius: 10px;
+ 	opacity: 1;
+  	background-color: rgba(0,0,0,.2);
+ 	margin: 30px;
+  	text-align: center;
+}
+
 .topright {
     position: absolute;
     top: 20px;
