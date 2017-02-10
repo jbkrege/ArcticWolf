@@ -63,7 +63,7 @@ button{
 }
 button:hover{
   color: white;
-  background-color: blue;
+  background-color: darkblue;
 }
 
 input[type=range]{
