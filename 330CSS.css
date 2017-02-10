@@ -3,14 +3,13 @@ body{
   text-align: center;
   background-image: url("http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/07/Icy-Polygons.jpg")
 }
-
 .center {
   border-radius: 10px;
-  opacity: .3;
+  background-color: white;
+  opacity: .4;
   margin: 0 auto;
   width: 800px;
   text-align: center;
-  background-color: ghostwhite;
 }
 
 h1{
@@ -38,6 +37,7 @@ button{
   border-width: 5px;
   border-radius: 5px;
   border-color: darkblue;
+  opacity: 0;
   margin: 5px;
 }
 .group{
