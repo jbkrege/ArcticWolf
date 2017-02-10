@@ -10,7 +10,7 @@ body{
   margin: 30px;
   text-align: center;
 }
-.middle{
+.middle{ /*Middle of screen for SignIn*/
 	position: absolute;
  	top: 50%;
 	left: 50%;
