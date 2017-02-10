@@ -1,0 +1,83 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-image: url("http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/07/Icy-Polygons.jpg")
+}
+
+.center {
+  border-radius: 10px;
+  opacity: 1;
+  margin: 0 auto;
+  width: 800px;
+  text-align: center;
+}
+
+button{
+    size: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: ghostwhite;
+    opacity: .9;
+}
+
+h1{
+  text-align: center;
+  font-size:50px;
+  color: darkblue;
+}
+
+p{
+	text-align: center	
+}
+
+h2{
+  text-align: center;
+  font-size: 15px;
+  color: ghostwhite;
+}
+button{
+  size: 40px;
+  color: darkblue;
+  min-height: 15px;
+  min-width: 300px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 5;
+  border-color: darkblue;
+  margin: 5px;
+}
+button:hover{
+  background-color: darkblue;
+}
+
+input[type=range]{
+    -webkit-appearance: none;
+  width: 300px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: gray;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    opacity: 1;
+    background: blue;
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: gray;
+}
