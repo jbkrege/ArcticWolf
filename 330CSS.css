@@ -26,13 +26,14 @@ h1{
 
 p{
 	text-align: center;
+	color: darkblue;
 	opacity: 1;
 }
 
 h2{
   text-align: center;
   font-size: 15px;
-  color: ghostwhite;
+  color: grey;
   opacity: 1;
 }
 
