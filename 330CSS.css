@@ -6,7 +6,7 @@ body{
 .center {
   border-radius: 10px;
   opacity: 1;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.2);
   margin: 30px;
   text-align: center;
 }
