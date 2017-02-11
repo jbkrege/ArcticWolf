@@ -62,16 +62,13 @@ button{
   border-radius: 5px;
   border-color: darkblue;
   opacity: 1;
-  margin: 5px;
+  margin: 5px;	
+  outline: none;
 }
 
 button:hover{
   color: white;
   background-color: darkblue;
-}
-
-button:active{
-   outline: none;
 }
 
 .group{
