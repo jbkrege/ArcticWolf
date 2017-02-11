@@ -111,9 +111,11 @@ input[type=range]::-webkit-slider-thumb {
     border: none;
     height: 16px;
     width: 16px;
+    border-width: 1px;
+    border-color: darkblue;
     border-radius: 50%;
     opacity: 1;
-    background: blue;
+    background: darkblue;
     margin-top: -4px;
 }
 
