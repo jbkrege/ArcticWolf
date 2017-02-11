@@ -1,3 +1,3 @@
-input[type=text].onClick = function() {
-  
+document.getElementById("txtenter").onClick = function() {
+  document.getElementById("txtenter").value = "";
 };
