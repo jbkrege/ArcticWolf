@@ -1,3 +1,8 @@
+document.getElementById("txtenter0").color = gray;
+document.getElementById("txtenter1").color = gray;
+document.getElementById("txtenter2").color = gray;
+document.getElementById("txtenter3").color = gray;
+
 document.getElementById("txtenter0").onclick = function() {
     document.getElementById("txtenter0").value = "";
     document.getElementById("txtenter0").color = black;
