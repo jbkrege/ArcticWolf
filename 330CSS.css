@@ -165,19 +165,24 @@ input[type=range]:active::-webkit-slider-thumb{
     background: lightblue;
 }
 
+.e1{
+  position: relative;
+  right: 3px;
+}
+
 .e2{
  position: relative;
- left: 14px;
+ right: 14px;
 }
 
 .e3{
 position: relative;
-right: 17px; 
+left: 10px; 
 }
 
 .e4{
 position: relative;
-right: 10px;
+left: 7px;
 }
 
 .etitle{
