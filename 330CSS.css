@@ -129,11 +129,11 @@ input[type=text]:focus{
 
 input[type=range]{
     -webkit-appearance: none;
-  width: 300px;
+  width: 700px;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
-    width: 300px;
+    width: 700px;
     height: 5px;
     background: gray;
     border: none;
