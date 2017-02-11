@@ -75,6 +75,39 @@ button{
   border-color: darkblue;
   margin: 5px;
 }
+
+.TeamButton{
+  text-align: left;
+}
+
+.ETeam{
+  min-width: 250px;
+  min-height: 100px;
+  font-size: 30px;
+  color: white;
+  border-color: lightblue;
+  background-color: #003366;
+  opacity: 0.7;
+}
+
+.ETeam:hover{
+  background-color: #0059b3;
+}
+
+.MTeam{
+  min-width: 250px;
+  min-height: 100px;
+  font-size: 30px;
+  color: white;
+  border-color: lightblue;
+  background-color: #0099cc;
+  opacity: 0.7;
+}
+
+.MTeam:hover{
+  background-color: #1ac6ff;
+}
+
 button:hover{
   color: white;
   background-color: darkblue;
