@@ -82,7 +82,6 @@ button:hover{
 
 input[type=text]{
   border: 1px solid darkblue;
-  color: gray;
 }
 
 input[type=text]:hover{
