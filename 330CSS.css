@@ -185,14 +185,14 @@ font-size: 20px;
 }
 
 .eleft{
-color: darkgray;
+color: rgb(80,80,80);
 text-align: left;
 position: relative;
 right: 350px;
 }
 
 .eright{
-color: darkgray;
+color: rgb(80,80,80);
 text-align: right;
 position: relative;
 left: 350px;
