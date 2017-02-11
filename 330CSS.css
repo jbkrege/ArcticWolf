@@ -64,6 +64,16 @@ button{
   opacity: 1;
   margin: 5px;
 }
+
+button:hover{
+  color: white;
+  background-color: darkblue;
+}
+
+button:active{
+   outline: none;
+}
+
 .group{
   size: 40px;
   min-width: 300px;
@@ -106,11 +116,6 @@ button{
 
 .MTeam:hover{
   background-color: #1ac6ff;
-}
-
-button:hover{
-  color: white;
-  background-color: darkblue;
 }
 
 input[type=text]{
