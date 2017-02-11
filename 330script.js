@@ -1,3 +1,3 @@
-function clearTxt(){
+input[type=text].onClick = function() {
   
-}
+};
