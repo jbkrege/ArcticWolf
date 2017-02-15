@@ -1,19 +1,15 @@
-var email = true;
-var password = true;
 
   document.getElementById("txtenter0").onclick = function() {
-    if(email){
+    if(document.getElementById("txtenter0").value == "Email"){
        document.getElementById("txtenter0").value = "";
        document.getElementById("txtenter0").color = black;
-       email = false;
     }
   };
 
   document.getElementById("txtenter1").onclick = function() {
-    if(password){
+    if(document.getElementById("txtenter1").value == "Password"){
         document.getElementById("txtenter1").value = "";
         document.getElementById("txtenter1").color = black;
-        password = false;
     }
   };
 
