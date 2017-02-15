@@ -7,5 +7,5 @@ Or (possibly better?):
 https://rawgit.com/jbkrege/ArcticWolf/master/330SignIn.html     
      
 P6 Branch:      
-http://htmlpreview.github.com/?https://github.com/jbkrege/ArcticWolf/tree/P6/330/SignIn.html     
-https://rawgit.com/jbkrege/ArcticWolf/tree/P6/330/SignIn.html      
+http://htmlpreview.github.com/?https://github.com/jbkrege/ArcticWolf/blob/P6/330/SignIn.html     
+https://rawgit.com/jbkrege/ArcticWolf/blob/P6/330/SignIn.html      
