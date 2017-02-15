@@ -7,13 +7,25 @@
 <body>
 <h1>DTC Spring</h1>
 <div class = 'center'>
-  <ul>
     <div class = 'TeamButton'>
       <a href="330EvaluateTeam.html"><button class = "ETeam">Evaluate Team</button></a>
       <div><button class = "MTeam">Manage Team</button></div>
     </div>
-  </ul>
+	<div id = "graphContainer">
+		<div style="background-color: cyan; height: 100%; width: 100%;"></div>
+		<div id="graphDiv" class = 'graph'></div>
+		<div class="divider">
+			<div id="donutchart2" class="chart"></div>
+	    	<div id="donutchart" class="chart"></div> 
+	    </div>
+		<div class="divider">
+			<div id="donutchart3" class="chart"></div>
+		    <div id="donutchart4" class="chart""></div>
+		</div>
+	</div>
 </div>
+                                            
+<div class = 'center'>
   <div class="dropdownstyle">
   <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">Dropdown</button>
@@ -24,5 +36,6 @@
   </div>
   </div>
 </div>
+ 
 <div class = "topright"><a href = "330SignIn.html"><button>Logout</button></a></div>
 </body>
