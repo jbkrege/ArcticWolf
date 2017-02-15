@@ -8,4 +8,4 @@ https://rawgit.com/jbkrege/ArcticWolf/master/330SignIn.html
      
 P6 Branch:      
 http://htmlpreview.github.com/?https://github.com/jbkrege/ArcticWolf/blob/P6/330SignIn.html     
-https://rawgit.com/jbkrege/ArcticWolf/blob/P6/330SignIn.html      
+https://rawgit.com/jbkrege/ArcticWolf/P6/330SignIn.html      
