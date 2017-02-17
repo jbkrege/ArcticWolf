@@ -3,6 +3,8 @@
 <head>
   <link rel = "stylesheet" type = "text/css" href = "330CSS.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="graphs.js"></script>
 </head>
 <body>
 <h1>DTC Spring</h1>
@@ -16,15 +18,15 @@
 		<div id="graphDiv" class = 'graph'></div>
 		<div class="divider">
 			<div id="donutchart2" class="chart"></div>
-	    	<div id="donutchart" class="chart"></div> 
-	    </div>
+	    		<div id="donutchart" class="chart"></div> 
+		</div>
 		<div class="divider">
 			<div id="donutchart3" class="chart"></div>
-		    <div id="donutchart4" class="chart"></div>
+		   	<div id="donutchart4" class="chart"></div>
 		</div>
 	</div>
 </div>
-					
+	
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#">Team1</a>
@@ -35,6 +37,7 @@
 
 <!-- Use any element to open the sidenav -->
 <span onclick="openNav()">Team Selection</span>
+
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
