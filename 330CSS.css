@@ -98,7 +98,7 @@ button:hover{
 }
 .chart{
   float:left;
-  margin: 2px;
+/*   margin: 2px; */
   border-radius: 30px;
   width: 49%;
   height: 1%;
