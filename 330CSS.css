@@ -100,8 +100,8 @@ button:hover{
   float:left;
 /*   margin: 2px; */
   border-radius: 30px;
-  width: 49%;
-  height: 1%;
+  width: 50%;
+  height: 20%;
 }
 .graph{
   width: 100%;
