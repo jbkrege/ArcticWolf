@@ -208,7 +208,7 @@ top: 5px;
 
 .sidenav {
     height: 100%;
-    width: 
+    width: 0;
     position: fixed; 
     z-index: 1; 
     top: 0;
