@@ -706,21 +706,23 @@ h1.page-header {
 	text-align: center;
 	width: 120px;
 	height: 120px;
+	bottom: 10px;
 	margin: 20px auto 10px auto;
 }
 
 .easypiechart .percent {
 	display: block;
-	position: absolute;
-	font-size: 26px;
-	top: 38px;
+	position: relative;
+	font-size: 13px;
+	top: 80px;
+	right: 20px;
 	width: 120px;
 }
 
-#easypiechart-blue .percent { color: #30a5ff;}
-#easypiechart-teal .percent { color: #1ebfae;}
-#easypiechart-orange .percent { color: #ffb53e;}
-#easypiechart-red .percent { color: #ef4040;}
+#easypiechart-blue .percent { color: grey;}
+#easypiechart-teal .percent { color: grey;}
+#easypiechart-orange .percent { color: grey;}
+#easypiechart-red .percent { color: grey;}
 
 /*Calendar Widget*/
 
