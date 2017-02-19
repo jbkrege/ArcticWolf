@@ -558,21 +558,12 @@ a.bg-danger:hover {
 	box-shadow: inset 0px 0px 0px 1px #30a5ff;
 }
 
-.user-menu {
-	display: inline-block;
-	margin-top: 14px;
+.Logout {
+	/*display: inline-block;*/
+	margin-top: 12px;
 	margin-right: 10px;
 	float: right;
-	list-style: none;
-	padding: 0;
-}
-
-.user-menu a {
-	color: #fff;
-}
-
-.user-menu a:hover, .user-menu a:focus {
-	text-decoration: none;
+	padding: 2px;
 }
 
 /* Sidebar */
