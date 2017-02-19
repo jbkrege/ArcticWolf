@@ -2,7 +2,7 @@
  * easyPieChart
  * Lightweight plugin to render simple, animated and retina optimized pie charts
  *
- * @license 
+ * @license
  * @author Robert Fleischmann <rendro87@gmail.com> (http://robert-fleischmann.de)
  * @version 2.1.5
  **/
@@ -74,10 +74,11 @@ var CanvasRenderer = function(el, options) {
 		var isNegative = percent <= 0 ? true : false;
 
 		ctx.beginPath();
-		ctx.arc(0, 0, radius, 0, Math.PI * 2 * percent, isNegative);
-
+		//ctx.arc(0, 0, radius, 0, Math.PI * 2 * percent, isNegative);
+    ctx.moveTo(35,-50);
+    ctx.lineTo(35, -50 + Math.abs(percent)*100);
 		ctx.strokeStyle = color;
-		ctx.lineWidth = lineWidth;
+		ctx.lineWidth = 10;
 
 		ctx.stroke();
 	};
@@ -134,7 +135,7 @@ var CanvasRenderer = function(el, options) {
   this.getCanvas = function() {
     return canvas;
   };
-  
+
   /**
     * Canvas 2D context 'ctx' accessor
    */
@@ -176,11 +177,19 @@ var CanvasRenderer = function(el, options) {
 
 		// if barcolor is a function execute it and pass the percent as a value
 		var color;
-		if (typeof(options.barColor) === 'function') {
-			color = options.barColor(percent);
-		} else {
-			color = options.barColor;
+		//nailed it
+    if(Math.abs(percent) > 0){
+      color = 'lightgreen';
+    }
+    if(Math.abs(percent) > 25){
+			color = 'yellow';
 		}
+    if(Math.abs(percent) > 50){
+      color = 'orange';
+    }
+    if(Math.abs(percent) > 75){
+      color = 'red';
+    }
 
 		// draw bar
 		drawCircle(color, options.lineWidth, percent / 100);
