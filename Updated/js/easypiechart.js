@@ -79,6 +79,7 @@ var CanvasRenderer = function(el, options) {
     ctx.lineTo(35, -50 + Math.abs(percent)*100);
 		ctx.strokeStyle = color;
 		ctx.lineWidth = 10;
+    ctx.lineCap = 'round';
 
 		ctx.stroke();
 	};
@@ -222,7 +223,7 @@ var CanvasRenderer = function(el, options) {
 var EasyPieChart = function(el, opts) {
 	var defaultOptions = {
 		barColor: '#ef1e25',
-		trackColor: '#f9f9f9',
+		trackColor: '#66ffff',//#f9f9f9
 		scaleColor: '#dfe0e0',
 		scaleLength: 5,
 		lineCap: 'round',
