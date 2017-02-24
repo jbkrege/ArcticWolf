@@ -180,16 +180,16 @@ var CanvasRenderer = function(el, options) {
 		var color;
 		//nailed it
     if(Math.abs(percent) > 0){
-      color = 'lightgreen';
+      color = 'red';
     }
     if(Math.abs(percent) > 25){
-			color = 'yellow';
+      color = 'orange';
 		}
     if(Math.abs(percent) > 50){
-      color = 'orange';
+      color = 'yellow';
     }
     if(Math.abs(percent) > 75){
-      color = 'red';
+      color = 'lightgreen';
     }
 
 		// draw bar
