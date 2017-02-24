@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -37,8 +37,8 @@
 	</nav>
 		
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
-		<ul class="nav menu">
-            <li class="parent">
+		<ul id="sidemenu" class="nav menu">
+            <li id="teamTemplate" class="parent">
                 <a data-toggle="collapse" href="#sub-item-1">
                     Team 1
                 </a>
@@ -60,45 +60,8 @@
                     </li>
                 </ul>
             </li>
-            <li class="parent ">
-                <a data-toggle="collapse" href="#sub-item-2">
-                    Team 2
-                </a>
-                <ul class="children collapse" id="sub-item-2">
-                    <li>
-                        <a class="" href="index.html">
-                            <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> View Team Status
-                        </a>
-                    </li>
-                    <li>
-	            
-                        <a class="" href="evaluate.html">
-                            <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Evaluate Team
-                        </a>
-                    </li>
-		    <li>
-                        <a class="" href="teamchat.html">
-                            <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Team Chat
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="parent ">
-                <a data-toggle="collapse" href="#sub-item-3">
-                    Team 3
-                </a>
-                <ul class="children collapse" id="sub-item-3">
-                    <li>
-                        <a class="" href="index.html">
-                            <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> View Team Status
-                        </a>
-                    </li>
-                    <li>
-                        <a class="" href="evaluate.html">
-                            <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Evaluate Team
-                        </a>
-                    </li>
-                </ul>
+            <li id="Add">
+                <a> <svg class="glyph stroked plus sign"><use xlink:href="#stroked-plus-sign" /></svg> Add Team</a>
             </li>
 
 
@@ -174,6 +137,7 @@
 		
 	</div>	<!--/.main-->
 
+    <script src="js/buttonfunctionality.js"></script>
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/chart.min.js"></script>
