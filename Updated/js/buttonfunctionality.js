@@ -7,6 +7,7 @@ document.getElementById("Add").onclick = function () {
     li.childNodes[1].textContent = "Unnamed Team";
     li.childNodes[1].href = li.childNodes[1].href + "1";
     li.childNodes[3].id = li.childNodes[3].id + "1";
+    li.className = "parent";
     ul.appendChild(li);
     ul.appendChild(add);
 };
