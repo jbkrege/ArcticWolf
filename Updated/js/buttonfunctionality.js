@@ -29,3 +29,21 @@ document.getElementById("AddMember").onclick = function () {
         document.getElementById("MemberList").appendChild(childe);
     }
 };
+
+function viewStatus() {
+    document.getElementById("teamStatus").className = "";
+    document.getElementById("evaluateTeam").className = "hide";
+    document.getElementById("manageTeam").className = "hide";
+}
+
+function evalTeam() {
+    document.getElementById("teamStatus").className = "hide";
+    document.getElementById("evaluateTeam").className = "";
+    document.getElementById("manageTeam").className = "hide";
+}
+
+function managTeam() {
+    document.getElementById("teamStatus").className = "hide";
+    document.getElementById("evaluateTeam").className = "hide";
+    document.getElementById("manageTeam").className = "";
+}
