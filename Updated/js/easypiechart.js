@@ -75,6 +75,21 @@ var CanvasRenderer = function(el, options) {
 
 		ctx.beginPath();
 		//ctx.arc(0, 0, radius, 0, Math.PI * 2 * percent, isNegative);
+    ctx.moveTo(35, 0);
+    ctx.lineTo(35, (percent)*50);
+		ctx.strokeStyle = color;
+		ctx.lineWidth = 10;
+    ctx.lineCap = 'round';
+
+		ctx.stroke();
+	};
+
+  var drawTrack = function(color, lineWidth, percent){
+    percent = Math.min(Math.max(-1, percent || 0), 1);
+		var isNegative = percent <= 0 ? true : false;
+
+		ctx.beginPath();
+		//ctx.arc(0, 0, radius, 0, Math.PI * 2 * percent, isNegative);
     ctx.moveTo(35,-50);
     ctx.lineTo(35, -50 + Math.abs(percent)*100);
 		ctx.strokeStyle = color;
@@ -82,7 +97,18 @@ var CanvasRenderer = function(el, options) {
     ctx.lineCap = 'round';
 
 		ctx.stroke();
-	};
+  };
+
+  var drawMidpoint = function(color){
+    ctx.beginPath();
+    ctx.moveTo(30, 0);
+    ctx.lineTo(40, 0);
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 10;
+    ctx.lineCap = 'round';
+    ctx.stroke();
+  };
+
 
 	/**
 	 * Draw the scale of the chart
@@ -127,7 +153,7 @@ var CanvasRenderer = function(el, options) {
 	 */
 	var drawBackground = function() {
 		if(options.scaleColor) drawScale();
-		if(options.trackColor) drawCircle(options.trackColor, options.lineWidth, 1);
+		if(options.trackColor) drawTrack(options.trackColor, options.lineWidth, 1); //draws scale
 	};
 
   /**
@@ -180,20 +206,21 @@ var CanvasRenderer = function(el, options) {
 		var color;
 		//nailed it
     if(Math.abs(percent) > 0){
-      color = 'red';
+      color = 'lightgreen';
     }
     if(Math.abs(percent) > 25){
-      color = 'orange';
+      color = 'goldenrod';
 		}
     if(Math.abs(percent) > 50){
-      color = 'yellow';
+      color = 'orange';
     }
     if(Math.abs(percent) > 75){
-      color = 'lightgreen';
+      color = 'red';
     }
 
 		// draw bar
 		drawCircle(color, options.lineWidth, percent / 100);
+    if(options.midColor) drawMidpoint(options.midColor); //draws middle marker
 	}.bind(this);
 
 	/**
@@ -223,8 +250,9 @@ var CanvasRenderer = function(el, options) {
 var EasyPieChart = function(el, opts) {
 	var defaultOptions = {
 		barColor: '#ef1e25',
-		trackColor: '#f9f9f9',//#f9f9f9 66ffff
+		trackColor: '#66ffff',//#f9f9f9 66ffff
 		scaleColor: '#dfe0e0',
+    midColor: 'lightgrey',
 		scaleLength: 5,
 		lineCap: 'round',
 		lineWidth: 3,
