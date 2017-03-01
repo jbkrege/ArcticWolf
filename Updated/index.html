@@ -32,10 +32,10 @@
 				<a class="navbar-brand" href="#"><span>Arctic</span>Wolf</a>
 				<a href="login.html" class="btn btn-primary Logout">Logout</a>
 			</div>
-							
+
 		</div><!-- /.container-fluid -->
 	</nav>
-		
+
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
 		<ul id="sidemenu" class="nav menu">
             <li id="Add">
@@ -67,21 +67,21 @@
 
 		</ul>
     </div>
-		
-	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">		
-		
+
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+
 		<div class="row">
 			<div class="col-lg-12">
 				<h1 class="page-header">Team Status</h1>
 			</div>
 		</div><!--/.row-->
-		
+
         <div class="row">
             <div class="col-xs-6 col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-body easypiechart-panel">
                         <h4>Personal Workload</h4>
-                        <div class="easypiechart" id="easypiechart-blue" data-percent="15">
+                        <div class="easypiechart" id="easypiechart-blue" data-percent="-85">
                             <span class="percent">Divide work a lot more</span>
                         </div>
                     </div>
@@ -91,8 +91,8 @@
                 <div class="panel panel-default">
                     <div class="panel-body easypiechart-panel">
                         <h4>Group Workload</h4>
-                        <div class="easypiechart" id="easypiechart-orange" data-percent="35">
-                            <span class="percent">Be more ambitious</span>
+                        <div class="easypiechart" id="easypiechart-orange" data-percent="60">
+                            <span class="percent">Be more realistic</span>
                         </div>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
                 <div class="panel panel-default">
                     <div class="panel-body easypiechart-panel">
                         <h4>Communication</h4>
-                        <div class="easypiechart" id="easypiechart-teal" data-percent="68">
+                        <div class="easypiechart" id="easypiechart-teal" data-percent="-35">
                             <span class="percent">Communicate a bit more</span>
                         </div>
                     </div>
@@ -111,14 +111,14 @@
                 <div class="panel panel-default">
                     <div class="panel-body easypiechart-panel">
                         <h4>Focus</h4>
-                        <div class="easypiechart" id="easypiechart-red" data-percent="95">
+                        <div class="easypiechart" id="easypiechart-red" data-percent="5">
                             <span class="percent">Your team is focused</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div><!--/.row-->
-		
+
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
@@ -131,10 +131,10 @@
 				</div>
 			</div>
 		</div><!--/.row-->
-		
-		
-								
-		
+
+
+
+
 	</div>	<!--/.main-->
 
     <script src="js/buttonfunctionality.js"></script>
@@ -150,9 +150,9 @@
 		});
 
 		!function ($) {
-		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
-		        $(this).find('em:first').toggleClass("glyphicon-minus");      
-		    }); 
+		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){
+		        $(this).find('em:first').toggleClass("glyphicon-minus");
+		    });
 		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
 		}(window.jQuery);
 
@@ -162,7 +162,7 @@
 		$(window).on('resize', function () {
 		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
 		})
-	</script>	
+	</script>
 </body>
 
 </html>
