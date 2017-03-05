@@ -79,7 +79,7 @@ var CanvasRenderer = function(el, options) {
     ctx.lineTo(35, (percent)*50);
 		ctx.strokeStyle = color;
 		ctx.lineWidth = 10;
-    ctx.lineCap = 'round';
+    ctx.lineCap = 'butt';
 
 		ctx.stroke();
 	};
@@ -94,7 +94,7 @@ var CanvasRenderer = function(el, options) {
     ctx.lineTo(35, -50 + Math.abs(percent)*100);
 		ctx.strokeStyle = color;
 		ctx.lineWidth = 10;
-    ctx.lineCap = 'round';
+    ctx.lineCap = 'butt';
 
 		ctx.stroke();
   };
@@ -104,8 +104,8 @@ var CanvasRenderer = function(el, options) {
     ctx.moveTo(30, 0);
     ctx.lineTo(40, 0);
     ctx.strokeStyle = color;
-    ctx.lineWidth = 10;
-    ctx.lineCap = 'round';
+    ctx.lineWidth = 3;
+    ctx.lineCap = 'square';
     ctx.stroke();
   };
 
@@ -252,7 +252,7 @@ var EasyPieChart = function(el, opts) {
 		barColor: '#ef1e25',
 		trackColor: '#66ffff',//#f9f9f9 66ffff
 		scaleColor: '#dfe0e0',
-    midColor: 'lightgrey',
+    midColor: 'darkgrey',
 		scaleLength: 5,
 		lineCap: 'round',
 		lineWidth: 3,
