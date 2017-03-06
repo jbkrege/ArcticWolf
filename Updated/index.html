@@ -41,23 +41,23 @@
             <li id="Add">
                 <a> <svg class="glyph stroked plus sign"><use xlink:href="#stroked-plus-sign" /></svg> Add Team</a>
             </li>
-            <li id="teamTemplate" class="parent hide">
+            <li id="teamTemplate" onclick="highlight('1')"  class="parent hide">
                 <a data-toggle="collapse" href="#sub-item-1">
                     Team 1
                 </a>
                 <ul class="children collapse" id="sub-item-1">
                     <li>
-                        <a class="" href="index.html">
+                        <a class="" onclick="navSite(this)" href="index.html">
                             <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> View Team Status
                         </a>
                     </li>
                     <li>
-                        <a class="" href="evaluate.html">
+                        <a class="" onclick="navSite(this)" href="evaluate.html">
                             <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Evaluate Team
                         </a>
                     </li>
                     <li>
-                        <a class="" href="manage.html">
+                        <a class="" onclick="navSite(this)" href="manage.html">
                             <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Manage Team
                         </a>
                     </li>
@@ -163,6 +163,7 @@
 		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
 		})
 	</script>
+    <script>loadUp();</script>
 </body>
 
 </html>
