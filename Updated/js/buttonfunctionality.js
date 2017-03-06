@@ -67,3 +67,17 @@ function loadUp() {
     clickedTeam = document.getElementById(lastclicked);
     clickedTeam.className = "parent active";
 }
+
+function registerTransfer() {
+    window.name = document.getElementById("email").value + "|" + document.getElementById("password").value;
+}
+
+function registerLoad() {
+    var ind = window.name.indexOf("|");
+    document.getElementById("remail").value = window.name.substring(0, ind);
+    document.getElementById("rpassword").value = window.name.substring(ind + 1);
+}
+
+function registerSubmit() {
+    window.name = "";
+}
