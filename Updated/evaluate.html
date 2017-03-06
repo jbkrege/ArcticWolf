@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -36,64 +36,36 @@
 		</div><!-- /.container-fluid -->
 	</nav>
 		
-	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
-		<ul class="nav menu">
-            <li class="active parent">
+    <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+        <ul id="sidemenu" class="nav menu">
+            <li id="Add">
+                <a> <svg class="glyph stroked plus sign"><use xlink:href="#stroked-plus-sign" /></svg> Add Team</a>
+            </li>
+            <li id="teamTemplate" class="parent hide">
                 <a data-toggle="collapse" href="#sub-item-1">
                     Team 1
                 </a>
                 <ul class="children collapse" id="sub-item-1">
                     <li>
-                        <a class="" href="index.html">
+                        <a class="" onclick="navSite(this)" href="index.html">
                             <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> View Team Status
                         </a>
                     </li>
                     <li>
-                        <a class="" href="#">
+                        <a class="" onclick="navSite(this)" href="evaluate.html">
                             <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Evaluate Team
                         </a>
                     </li>
-                </ul>
-            </li>
-            <li class="parent ">
-                <a data-toggle="collapse" href="#sub-item-2">
-                    Team 2
-                </a>
-                <ul class="children collapse" id="sub-item-2">
                     <li>
-                        <a class="" href="index.html">
-                            <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> View Team Status
-                        </a>
-                    </li>
-                    <li>
-                        <a class="" href="#">
-                            <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Evaluate Team
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="parent ">
-                <a data-toggle="collapse" href="#sub-item-3">
-                    Team 3
-                </a>
-                <ul class="children collapse" id="sub-item-3">
-                    <li>
-                        <a class="" href="index.html">
-                            <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> View Team Status
-                        </a>
-                    </li>
-                    <li>
-                        <a class="" href="#">
-                            <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Evaluate Team
+                        <a class="" onclick="navSite(this)" href="manage.html">
+                            <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Manage Team
                         </a>
                     </li>
                 </ul>
             </li>
 
 
-			<li role="presentation" class="divider"></li>
-			<li><a href="login.html"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Login Page</a></li>
-		</ul>
+        </ul>
     </div>
 		
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
@@ -129,7 +101,7 @@
 
 
 	</div>	<!--/.main-->
-
+    <script src="js/buttonfunctionality.js"></script>
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/chart.min.js"></script>
@@ -155,6 +127,7 @@
 		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
 		})
 	</script>	
+    <script>loadUp();</script>
 </body>
 
 </html>
