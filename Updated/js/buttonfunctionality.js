@@ -32,6 +32,7 @@ document.getElementById("NameEdit").onclick = function () {
         var id = setInterval(frame, 5);
         function frame() {
             if (b == 255) {
+                elem.style.backgroundColor = "rgb(255,255,255)";
                 clickedTeam.className = "parent active"
                 clearInterval(id);
             } else {
@@ -49,6 +50,7 @@ document.getElementById("AddMember").onclick = function () {
     document.getElementById("MemberName").value = "";
     if (name != "") {
         var childe = document.getElementById("MemberTemplate").cloneNode(true);
+        childe.className = "";
         childe.textContent = name;
         document.getElementById("MemberList").appendChild(childe);
         var elem = document.getElementById("memberBox");
