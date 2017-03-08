@@ -24,6 +24,23 @@ document.getElementById("NameEdit").onclick = function () {
     if (name != "") {
         document.getElementById("NameEnter").value = "";
         clickedTeam.childNodes[1].textContent = name;
+        clickedTeam.className = "parent temp";
+        var elem = clickedTeam;
+        var r = 0;
+        var g = 69;
+        var b = 111;
+        var id = setInterval(frame, 5);
+        function frame() {
+            if (b == 255) {
+                clickedTeam.className = "parent active"
+                clearInterval(id);
+            } else {
+                r++;
+                g += 2;
+                b += 3;
+                elem.style.backgroundColor = "rgb(" + r.toString() + "," + g.toString() + "," + b.toString() + ")";
+            }
+        }
     }
 };
 
@@ -34,6 +51,21 @@ document.getElementById("AddMember").onclick = function () {
         var childe = document.getElementById("MemberTemplate").cloneNode(true);
         childe.textContent = name;
         document.getElementById("MemberList").appendChild(childe);
+        var elem = document.getElementById("memberBox");
+        var r = 191;
+        var g = 191;
+        var b = 191;
+        var id = setInterval(frame, 5);
+        function frame() {
+            if (r == 255) {
+                clearInterval(id);
+            } else {
+                r++;
+                g++;
+                b++;
+                elem.style.backgroundColor = "rgb(" + r.toString() + "," + g.toString() + "," + b.toString() + ")";
+            }
+        }
     }
 };
 
