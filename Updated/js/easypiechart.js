@@ -207,6 +207,7 @@ var CanvasRenderer = function(el, options) {
 		//nailed it
     if(Math.abs(percent) > 0){
       color = 'lightgreen';
+      midColor = '#019e01';
     }
     if(Math.abs(percent) > 25){
       color = 'goldenrod';
