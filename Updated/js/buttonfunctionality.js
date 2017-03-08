@@ -111,5 +111,5 @@ function registerLoad() {
 }
 
 function registerSubmit() {
-    window.name = "";
+    window.name = "teamTemplate|Unnamed Team|";
 }
